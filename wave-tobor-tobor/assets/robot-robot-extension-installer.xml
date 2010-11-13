@@ -1,0 +1,11 @@
+<extension name="robot-robot"
+    description="Create a new Google Wave robot in a wave"
+thumbnailUrl="http://robot-robot.appspot.com/assets/icon.png">
+<author name="Duncan Hawthorne"/> 
+  <menuHook location="newwavemenu" text="New Google Wave robot" 
+      iconUrl="http://robot-robot.appspot.com/assets/icon.png">
+      <createNewWave>
+        <participant id="robot-robot@appspot.com" />
+      </createNewWave>
+  </menuHook>
+</extension> 

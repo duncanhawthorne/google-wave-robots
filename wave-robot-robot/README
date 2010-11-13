@@ -1,0 +1,19 @@
+With robot-robot you can create a robot inside a wave, use that robot immediately, and have the robot update in real time as you update the code. It's a simple wave to play with the python wave api.
+
+The robot makes cloud programming useful. It enables extremely rapid development where you can program, test and improve instantly. There is no need to install any software on your computer, and no need to wait to push your robot online. And because we are in a wave we can work from anywhere, easily collaborate, see revision history, review code and more.
+
+More details in the wave forum here:
+https://wave.google.com/wave/waveref/googlewave.com/w+tRpKCjb9A 
+
+Extra details
+robot-robot can be used in combination with kasyntaxy@appspot.com to give syntax highlighting of the code you write
+Robots written with robot-robot are exactly the same code you would use to write robots normally. So once you have used this tool to play with the robot, it can be copied directly into a text file and uploaded to app engine to be run normally, with no changes necessary
+The following code is used to print errors to the wave. It brings to the wave the extra information you get from logs at appspot.com
+import traceback
+try:
+  ...
+except:
+  wavelet.reply(traceback.format_exc())
+When changing robot handlers, ie for DocumentChanged, you will need to wait/refresh wave for your robot to start receiving those events. This isnt a problem in robot-robot, but rather due to how Google Wave caches information about what information to send to robots.
+There is a "Test robot" button to create a new wave with your robot, but there is no need to click this after every source code change, the robot will update everytime you click "Done" on any wave in which it is a participant.
+Waves created using the "Test robot" button do not produce the WAVELET_SELF_ADDED event, so if you have code for that event it will not run. This is because your robot is added to the wave by my robot, and robots acting on waves do not create events (a decision by Google Wave devs to prevent infinite loops of robots responding to each other). If you want to see this event, add your robot to a wave yourself. 

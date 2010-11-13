@@ -1,0 +1,9 @@
+<extension name="Word Count" description="Displays word count of selected words" thumbnailUrl="http://word-count-bot.appspot.com/assets/wordcountthumb.png">
+<author name="Duncan Hawthorne"/> 
+    <menuHook location="TOOLBAR" text="Count words" iconUrl="http://word-count-bot.appspot.com/assets/wordcounticon.png"> 
+<annotateSelection key="word-count-bot.appspot.com" value="word-count-me"/>
+    <addParticipants>
+      <participant id="word-count-bot@appspot.com"/>
+    </addParticipants>
+   </menuHook> 
+  </extension> 

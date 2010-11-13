@@ -1,0 +1,10 @@
+application: word-count-bot
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: word-count-bot.py
+- url: /assets
+  static_dir: assets

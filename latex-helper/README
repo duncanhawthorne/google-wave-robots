@@ -1,0 +1,23 @@
+latex-helper Google Code page
+
+About
+
+latex-helper replaces basic latex-like syntax with a wave equivalent. Converts (a lot of) the latex special characters and subscript and superscript. Works as a companion to latex gadgets when the full functionality of latex math rendering is not required.
+The bot is lives at latex-helper@appspot.com
+Use it with the robot at eqybot@appspot.com which gives full latex gadgets when more complex formatting is required
+
+To use the robot write:
+_ for subscript
+^ for superscript
+¬¬ to go back to regularscript once something has been formatted
+\alpha etc for special characters
+
+For example:
+\alpha_1^3+\beta=\gamma
+
+If you want to convert latex to be used in a wave. Use a latex -> html converter on the source file. Then copy this into a wave, and use this tool, eqybot and other wave functionality to continue working.
+
+Codewords convert when the next character is not a lower-case letter, as in the above example. If you want, you can end code words with ; so they change when the next character is a lower-case letter, and the ; will be removed
+TODO
+
+Ensure support of all latex special characters. I just need a more complete latex to unicode dictionary than I currently have 

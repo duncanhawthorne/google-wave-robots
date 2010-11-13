@@ -1,0 +1,18 @@
+robot-robot: a robot to run wave robots written inside a wave
+robot-robot enables you to write code for a robot inside a wave, and have that code act as the robot you intend immediately on another wave. As you make changes to your robot source code, the robot runs with those new changes straight away.
+
+This means no need to create an appengine profile for quick robot testing, no need to install any software on your computer, and no need to wait for your robot to upload between revisions.
+The robot delivers app engine error logs back into the wave instantly, so no need to refresh appspot.com 
+The robot also defines its own profile so is recognisable with a different profile name and image
+And because we are in a wave we gain automatically the ability to do revision history, collaboration, and code reviews.
+
+For example, I can write my robot in this wave: A simple wave robot
+This robot is written to change the word bob to the word dave.
+I then add robot-robot@appspot.com, which exports the contents of the wave, and instructs me to add a new robot address represented by this code to my new wave.
+I then add this robot to my new wave: A wave where I like to write BOB a lot 
+As the code should, when I press submit bob is changed to dave
+I can then go back to my original wave, and change the code, for example make it now replace bob with fred.
+When I press done the robot is updated.
+In A wave where I like to write BOB a lot the robot would then have bob be replaced by fred
+
+Install this extension to get started quickly 
